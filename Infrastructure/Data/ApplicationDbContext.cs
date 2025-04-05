@@ -1,8 +1,8 @@
-﻿using ClienteService.Models;
+﻿using ClienteService.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace ClienteService.Data
+namespace ClienteService.Infrastructure.Data
 {
     public class ApplicationDbContext : DbContext
     {

@@ -1,4 +1,4 @@
-﻿namespace ClienteService.Models
+﻿namespace ClienteService.Domain.Models
 {
     public class Cliente
     {

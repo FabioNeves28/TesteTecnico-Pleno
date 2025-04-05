@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ClienteService.Services
+namespace ClienteService.Application.Interfaces
 {
     public interface IRabbitMQService
     {

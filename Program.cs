@@ -1,3 +1,4 @@
+using ClienteService.Application.Services;
 using ClienteService.Data;
 using ClienteService.Services;
 using Microsoft.EntityFrameworkCore;
