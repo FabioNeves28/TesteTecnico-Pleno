@@ -1,0 +1,20 @@
+﻿version: '3.8'
+services:
+  api:
+    build: .
+    ports:
+      - "5000:80"
+    depends_on:
+      - db
+      - rabbitmq
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: clientesdb
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"

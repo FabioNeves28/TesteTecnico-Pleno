@@ -25,25 +25,33 @@ namespace ClienteService.Controllers
         [HttpPost]
         public async Task<IActionResult> CriarCliente([FromBody] Cliente cliente)
         {
-            if (_context.Clientes.Any(c => c.Email == cliente.Email))
-                return BadRequest("Email já cadastrado.");
+            try
+            {
+                if (_context.Clientes.Any(c => c.Email == cliente.Email))
+                    return BadRequest("Email já cadastrado.");
 
-            var endereco = await BuscarEndereco(cliente.Cep);
-            if (endereco == null)
-                return BadRequest("CEP inválido.");
+                var endereco = await BuscarEndereco(cliente.Cep);
+                if (endereco == null)
+                    return BadRequest("CEP inválido.");
 
-            cliente.Logradouro = endereco.Logradouro;
-            cliente.Bairro = endereco.Bairro;
-            cliente.Cidade = endereco.Localidade;
-            cliente.Estado = endereco.Uf;
+                cliente.Logradouro = endereco.Logradouro;
+                cliente.Bairro = endereco.Bairro;
+                cliente.Cidade = endereco.Localidade;
+                cliente.Estado = endereco.Uf;
 
-            _context.Clientes.Add(cliente);
-            await _context.SaveChangesAsync();
+                _context.Clientes.Add(cliente);
+                await _context.SaveChangesAsync();
 
-            _rabbitMqService.PublicarMensagemAsync($"Novo cliente cadastrado: {cliente.Email}");
+                await _rabbitMqService.PublicarMensagemAsync($"Novo cliente cadastrado: {cliente.Email}");
 
-            return CreatedAtAction(nameof(CriarCliente), new { id = cliente.Id }, cliente);
+                return CreatedAtAction(nameof(CriarCliente), new { id = cliente.Id }, cliente);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Ocorreu um erro inesperado. Por favor, tente novamente mais tarde.");
+            }
         }
+
 
         private async Task<ViaCepResponse> BuscarEndereco(string cep)
         {

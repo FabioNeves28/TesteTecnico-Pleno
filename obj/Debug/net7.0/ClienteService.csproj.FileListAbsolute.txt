@@ -71,3 +71,4 @@ C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\refin
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\ClienteService.pdb
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\ClienteService.genruntimeconfig.cache
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\ref\ClienteService.dll
+C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\ClienteService.sourcelink.json
