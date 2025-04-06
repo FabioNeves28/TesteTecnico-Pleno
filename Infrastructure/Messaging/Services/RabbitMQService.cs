@@ -1,8 +1,9 @@
-﻿using RabbitMQ.Client;
+﻿using ClienteService.Application.Interfaces;
+using RabbitMQ.Client;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClienteService.Services
+namespace ClienteService.Infrastructure.Messaging.Services
 {
     public class RabbitMQService : IRabbitMQService
     {

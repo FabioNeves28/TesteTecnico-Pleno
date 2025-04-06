@@ -1,11 +1,11 @@
-﻿using ClienteService.Data;
-using ClienteService.Models;
-using ClienteService.ResponseAPI;
-using ClienteService.Services;
+﻿using ClienteService.API.ResponseAPI;
+using ClienteService.Application.Interfaces;
+using ClienteService.Domain.Models;
+using ClienteService.Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace ClienteService.Controllers
+namespace ClienteService.API.Controllers
 {
     [ApiController]
     [Route("api/clientes")]

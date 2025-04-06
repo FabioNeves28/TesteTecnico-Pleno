@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace ClienteService.ResponseAPI
+namespace ClienteService.API.ResponseAPI
 {
     public class ViaCepResponse
     {

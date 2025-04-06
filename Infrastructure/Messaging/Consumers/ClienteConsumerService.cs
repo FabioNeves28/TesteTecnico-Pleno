@@ -1,16 +1,15 @@
 ﻿using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-using System;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace ClienteService.Services
+namespace ClienteService.Infrastructure.Messaging.Consumers
 {
-    public class ClienteConsumer
+    public class ClienteConsumerService : BackgroundService
     {
-        public static async Task ConsumirAsync()
+        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             var factory = new ConnectionFactory() { HostName = "localhost" };
+
             await using var connection = await factory.CreateConnectionAsync();
             await using var channel = await connection.CreateChannelAsync();
 
@@ -37,8 +36,12 @@ namespace ClienteService.Services
                 consumer: consumer
             );
 
-            Console.WriteLine(" Pressione [enter] para sair.");
-            Console.ReadLine();
+            while (!stoppingToken.IsCancellationRequested)
+            {
+                await Task.Delay(1000, stoppingToken);
+            }
         }
     }
+
+
 }

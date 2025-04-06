@@ -6,6 +6,7 @@ C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\Clien
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\ClienteService.runtimeconfig.json
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\ClienteService.dll
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\ClienteService.pdb
+C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\Castle.Core.dll
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\EntityFramework.SqlServer.dll
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\EntityFramework.dll
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\Humanizer.dll
@@ -19,6 +20,7 @@ C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\Micro
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\Microsoft.OpenApi.dll
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\Moq.dll
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\Npgsql.dll
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
@@ -54,6 +56,7 @@ C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\Clien
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\ClienteService.csproj.CoreCompileInputs.cache
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\ClienteService.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\ClienteService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\ClienteService.sourcelink.json
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\scopedcss\bundle\ClienteService.styles.css
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\staticwebassets.development.json
@@ -71,4 +74,3 @@ C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\refin
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\ClienteService.pdb
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\ClienteService.genruntimeconfig.cache
 C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\ref\ClienteService.dll
-C:\Users\Fabio\source\repos\ClienteService\ClienteService\obj\Debug\net7.0\ClienteService.sourcelink.json

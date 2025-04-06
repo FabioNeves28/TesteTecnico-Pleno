@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "ClienteService.Controllers.ClientesController",
+    "ContainingType": "ClienteService.API.Controllers.ClientesController",
     "Method": "CriarCliente",
     "RelativePath": "api/clientes",
     "HttpMethod": "POST",
@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "cliente",
-        "Type": "ClienteService.Models.Cliente",
+        "Type": "ClienteService.Domain.Models.Cliente",
         "IsRequired": true
       }
     ],
